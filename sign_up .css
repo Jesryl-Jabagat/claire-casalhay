@@ -1,0 +1,242 @@
+/* sign .sign-up_section */
+body {
+    display:inline;
+    flex-direction: column;
+    min-height: 110vh;
+    /* background: url('image.jpeg.jpeg') no-repeat; */
+    background: url(Images/Final.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    z-index: 1000;
+    background-color: #00ffc8;
+    padding: 20px 5px 20px 5px;
+    justify-content: flex-end;
+ }
+  .navlinks{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-right: 30px;
+    margin: 0;
+    padding: 0;
+  
+ }
+ .navlinks ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+ }
+  .navlinks li{ 
+    list-style: none;
+    width: 100px;
+ }
+ .navlinks li a{
+    text-decoration: none;
+    color: #0e0d0d;
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: transparent;
+ }
+ .navlinks li a:hover {
+    background-color: #26e4f2;
+    color: #0e0d0d;
+    border: 1px solid #26e4f2;
+ }
+ .navlinks a.active {
+    background-color: #26e4f2;
+    color: #0e0d0d;
+    border: 1px solid #26e4f2;
+ }
+.link-navbar {
+    position: fixed;
+    width: 100%;
+    margin: auto;
+    padding: 50px 20px 20px 100px ;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #360404;
+}
+.link-navbar ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0  20px;
+    position: relative;
+
+}
+
+.link-navbar ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.link-navbar ul li a.active {
+    color: rgb(102, 67, 2);
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #13ed5f;
+    transition: all .5s ease all;
+}
+
+.link-navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+
+}
+
+.link-navbar ul li:hover::after {
+    width: 100%;
+
+}
+
+
+
+.sign-up_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+.wrapper {
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgb(2, 0, 0, .2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper .input-box {
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255,.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px px 20px 20px;
+
+}
+
+
+.input-box input::placeholder {
+    color: #fff;
+    
+   
+    
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: 15px 0 15px;
+}
+
+.remember-forgot label input {
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.wrapper .register-link {
+    font-size: 14.5 px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center; 
+    padding: 20px; 
+    background: #333; /* Dark  background */
+    color: white; 
+    position: relative; 
+    bottom: 0; 
+    width: 100%; 
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); /* Shadow on  footer */
+}
+
+
+
+
+
+

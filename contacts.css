@@ -1,0 +1,301 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #3ccde0;
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    z-index: 1000;
+    background-color: #00ffc8;
+    padding: 20px 5px 20px 5px;
+    justify-content: flex-end;
+ }
+  .navlinks{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-right: 30px;
+    margin: 0;
+    padding: 0;
+  
+ }
+ .navlinks ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+ }
+  .navlinks li{ 
+    list-style: none;
+    width: 100px;
+ }
+ .navlinks li a{
+    text-decoration: none;
+    color: #0e0d0d;
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: transparent;
+ }
+ .navlinks li a:hover {
+    background-color: #26e4f2;
+    color: #0e0d0d;
+    border: 1px solid #26e4f2;
+ }
+ .navlinks a.active {
+    background-color: #26e4f2;
+    color: #0e0d0d;
+    border: 1px solid #26e4f2;
+ }
+.link-navbar {
+    position: fixed;
+    width: 100%;
+    margin: auto;
+    padding: 50px 20px 20px 100px ;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #360404;
+}
+.link-navbar ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0  20px;
+    position: relative;
+
+}
+
+.link-navbar ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.link-navbar ul li a.active {
+    color: rgb(102, 67, 2);
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #13ed5f;
+    transition: all .5s ease all;
+}
+
+.link-navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+
+}
+
+.link-navbar ul li:hover::after {
+    width: 100%;
+
+}
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light gray background for the entire page */
+    margin: 0;
+    padding: 0;
+}
+
+.contact-wrapper {
+    background-color: #008cba; /* Blue background for the area behind the form */
+    padding: 50px 0; /* Adds vertical padding to the background section */
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff; /* White background for the form */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 1rem;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.85rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 0.85rem;
+        padding: 6px;
+    }
+
+    button {
+        font-size: 0.85rem;
+        padding: 10px;
+    }
+}
+
+/* .container {
+    width: 35%;
+    margin-top: 20px;
+    
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 4em;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input:focus, textarea:focus {
+    border-color: #5cb85c;
+    outline: none;
+}
+
+button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #4cae4c;
+
+}
+
+body {
+    display:inline;
+    flex-direction: column;
+    min-height: 110vh;
+    
+    background: url(Photo/dance.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+} */
+

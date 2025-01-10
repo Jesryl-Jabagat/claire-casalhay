@@ -1,0 +1,236 @@
+
+/* Reset default margin and padding for consistency */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+   font-family: Arial, sans-serif;
+   height: 100vh;
+   background: url('Images/Final.jpeg') no-repeat center center fixed;
+   background-size: cover;
+   background-attachment: fixed;
+}
+.navbar{
+   position: fixed;
+   display: flex;
+   width: 100%;
+   height: fit-content;
+   z-index: 1000;
+   background-color: #00ffc8;
+   padding: 20px 5px 20px 5px;
+   justify-content: flex-end;
+}
+ .navlinks{
+   list-style: none;
+   display: flex;
+   gap: 20px;
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+   margin-right: 30px;
+   margin: 0;
+   padding: 0;
+ 
+}
+.navlinks ul {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+}
+ .navlinks li{ 
+   list-style: none;
+   width: 100px;
+}
+.navlinks li a{
+   text-decoration: none;
+   color: #0e0d0d;
+   width: 100%;
+   border-radius: 10px;
+   padding: 5px 10px;
+   background-color: transparent;
+}
+.navlinks li a:hover {
+   background-color: #26e4f2;
+   color: #0e0d0d;
+   border: 1px solid #26e4f2;
+}
+.navlinks a.active {
+   background-color: #26e4f2;
+   color: #0e0d0d;
+   border: 1px solid #26e4f2;
+}
+.link-navbar {
+   position: fixed;
+   width: 100%;
+   margin: auto;
+   padding: 50px 20px 20px 100px ;
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   background-color: #360404;
+}
+.link-navbar ul li {
+   list-style-type: none;
+   display: inline-block;
+   margin: 0  20px;
+   position: relative;
+
+}
+
+.link-navbar ul li a {
+   text-decoration: none;
+   font-weight: 600;
+   color: #fff;
+   text-transform: uppercase;
+}
+
+.link-navbar ul li a.active {
+   color: rgb(102, 67, 2);
+   padding: 10px;
+   border-radius: 5px;
+   background-color: #13ed5f;
+   transition: all .5s ease all;
+}
+
+.link-navbar ul li::after {
+   content: '';
+   height: 3px;
+   width: 0;
+   background: #009688;
+   position: absolute;
+   left: 0;
+   bottom: -10px;
+   transition: 0.5s;
+
+}
+
+.link-navbar ul li:hover::after {
+   
+   width: 100%;
+
+}
+
+
+/* Header Styling */
+.header {
+   background-color: #2c3e50;
+   color: #7cf364;
+   padding: 70px 0 10px;
+   text-align: center;
+}
+
+.header h1 {
+   font-size: 2.5rem;
+   margin-top: 20px;
+   margin-bottom: -10px;
+}
+
+/* Main content section */
+main {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   padding: 25px;
+}
+
+/* Tourist Spot Card */
+.tourist-spot {
+   background: rgb(0, 255, 213);
+   border-radius: 50px;
+   box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.1);
+   padding: 30px;
+   width: 400px;
+   text-align: center;
+   margin: 12px;
+}
+
+.tourist-spot img {
+   max-width: 100%;
+   border-radius: 8%;
+}
+
+h2 {
+   color: #1b1f1e;
+}
+
+p {
+   color: #2c3e50;
+}
+
+/* Button Styling */
+button {
+   width: 200px;
+   padding: 15px 0;
+   text-align: center;
+   margin: 20px;
+   border-radius: 25px;
+   font-weight: bold;
+   border: 2px solid #009688;
+   background: transparent;
+   color: #0e0d0d;
+   cursor: pointer;
+   position: relative;
+   overflow: hidden;
+}
+
+button span {
+   background: #73c6bc;
+   height: 100%;
+   width: 0;
+   border-radius: 25px;
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   z-index: -1;
+   transition: 0.5s;
+}
+
+button:hover span {
+   width: 100%;
+}
+
+button {
+   width: 200px;
+   padding: 15px 0;
+   text-align: center;
+   margin: 20px auto;
+   border-radius: 25px;
+   font-weight: bold;
+   border: 2px solid #009688;
+   background: transparent;
+   color: #0e0d0d;
+   cursor: pointer;
+   position: relative;
+   display: block;
+   transition: all 0.3s ease;
+}
+
+button:hover {
+   background-color: #009688;
+   color: white;
+   border-color: #00796b;
+}
+
+span {
+   background: #73c6bc;
+   height: 100%;
+   width: 0;
+   border-radius: 25px;
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   z-index: -1;
+   transition: 0.5s;
+}
+
+button:hover span {
+   width: 100%;
+}
+
+
+
